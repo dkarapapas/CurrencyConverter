@@ -1,0 +1,8 @@
+body {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#Header{
+    text-align: center;
+    overflow:auto
+}

@@ -1,0 +1,167 @@
+[
+  {"description": "Αφγκάνι", "currency_icon": "؋", "currency_identifier": "AFA"}
+,{"description": "Λέκ", "currency_icon": "Lek", "currency_identifier": "ALL"}
+,{"description": "Δινάριο Αλγερίας", "currency_icon": "دج", "currency_identifier": "DZD"}
+,{"description": "Κβάντζα Αγκόλας", "currency_icon": "Kz", "currency_identifier": "AOA"}
+,{"description": "Πέσος Αργεντινής", "currency_icon": "$", "currency_identifier": "ARS"}
+,{"description": "Ντράμ", "currency_icon": "֏", "currency_identifier": "AMD"}
+,{"description": "Aruba Florin", "currency_icon": "ƒ", "currency_identifier": "AWG"}
+,{"description": "Δολάριο Αυστραλίας", "currency_icon": "$", "currency_identifier": "AUD"}
+,{"description": "Μονάτ Αζερμπαιτζάν", "currency_icon": "m", "currency_identifier": "AZN"}
+,{"description": "Δολλάριο Μπαχάμας", "currency_icon": "B$", "currency_identifier": "BSD"}
+,{"description": "Δινάριο Μπαχρέιν", "currency_icon": ".د.ب", "currency_identifier": "BHD"}
+,{"description": "Τάκα Μπαγκλαντές", "currency_icon": "৳", "currency_identifier": "BDT"}
+,{"description": "Δολλάριο Μπαρμπέιντος", "currency_icon": "Bds$", "currency_identifier": "BBD"}
+,{"description": "Belarus Rubel", "currency_icon": "Br", "currency_identifier": "BYR"}
+,{"description": "Βελγικό φράγκο", "currency_icon": "fr", "currency_identifier": "BEF"}
+,{"description": "Δολλάριο Μπελίζε", "currency_icon": "$", "currency_identifier": "BZD"}
+,{"description": "Δολλάριο Βερμούδων", "currency_icon": "$", "currency_identifier": "BMD"}
+,{"description": "Νγκουλτρουμ", "currency_icon": "Nu.", "currency_identifier": "BTN"}
+,{"description": "Bitcoin", "currency_icon": "฿", "currency_identifier": "BTC"}
+,{"description": "Βολιβιανός", "currency_icon": "Bs.", "currency_identifier": "BOB"}
+,{"description": "Συμβατό μάρκο", "currency_icon": "KM", "currency_identifier": "BAM"}
+,{"description": "Πούλα", "currency_icon": "P", "currency_identifier": "BWP"}
+,{"description": "Ριάλ Βραζιλίας", "currency_icon": "R$", "currency_identifier": "BRL"}
+,{"description": "Λίρα στέρλινγκ", "currency_icon": "£", "currency_identifier": "GBP"}
+,{"description": "Δολλάριο Μπρουνέι", "currency_icon": "B$", "currency_identifier": "BND"}
+,{"description": "Λεβ Βουλγαρίας", "currency_icon": "Лв.", "currency_identifier": "BGN"}
+,{"description": "φ]Φράγκο Μπουρούντι", "currency_icon": "FBu", "currency_identifier": "BIF"}
+,{"description": "Ριελ", "currency_icon": "KHR", "currency_identifier": "KHR"}
+,{"description": "Δολλάριο Καναδά", "currency_icon": "$", "currency_identifier": "CAD"}
+,{"description": "Centavo", "currency_icon": "$", "currency_identifier": "CVE"}
+,{"description": "Δολλάριο Καϊμαν", "currency_icon": "$", "currency_identifier": "KYD"}
+,{"description": "Φράγκο CFA", "currency_icon": "CFA", "currency_identifier": "XOF"}
+,{"description": "Φράγκο CFP", "currency_icon": "FCFA", "currency_identifier": "XAF"}
+,{"description": "Φράγκο CFP", "currency_icon": "₣", "currency_identifier": "XPF"}
+,{"description": "Πέσος Χιλής", "currency_icon": "$", "currency_identifier": "CLP"}
+,{"description": "Γιουάν Ρενμιμπι", "currency_icon": "¥", "currency_identifier": "CNY"}
+,{"description": "Πέσος Κολομβίας", "currency_icon": "$", "currency_identifier": "COP"}
+,{"description": "Φράγκο Κομόρων", "currency_icon": "CF", "currency_identifier": "KMF"}
+,{"description": "Φράγκο Κονγκό", "currency_icon": "FC", "currency_identifier": "CDF"}
+,{"description": "Kόλον Κόστα Ρίκα", "currency_icon": "₡", "currency_identifier": "CRC"}
+,{"description": "Κούνα", "currency_icon": "kn", "currency_identifier": "HRK"}
+,{"description": "Πέσος Κούβας", "currency_icon": "$, CUC", "currency_identifier": "CUC"}
+,{"description": "Κορώνες Τσεχίας", "currency_icon": "Kč", "currency_identifier": "CZK"}
+,{"description": "Κορώνα Δανίας", "currency_icon": "Kr.", "currency_identifier": "DKK"}
+,{"description": "Φράγκο Τζιμπουτί", "currency_icon": "Fdj", "currency_identifier": "DJF"}
+,{"description": "Πέσος Δομίνικου", "currency_icon": "$", "currency_identifier": "DOP"}
+,{"description": "Δολλάριο ανατολικής Καραϊβικής", "currency_icon": "$", "currency_identifier": "XCD"}
+,{"description": "Λίρα Αιγύπτου", "currency_icon": "ج.م", "currency_identifier": "EGP"}
+,{"description": "Nakfa", "currency_icon": "Nfk", "currency_identifier": "ERN"}
+,{"description": "Κορώνα Εσθονίας", "currency_icon": "kr", "currency_identifier": "EEK"}
+,{"description": "Μπίρ Αιθιοπίας", "currency_icon": "Nkf", "currency_identifier": "ETB"}
+,{"description": "Ευρώ", "currency_icon": "€", "currency_identifier": "EUR"}
+,{"description": "Λίρα Φαλκλαντ", "currency_icon": "£", "currency_identifier": "FKP"}
+,{"description": "Δολλάριο Φίτζι", "currency_icon": "FJ$", "currency_identifier": "FJD"}
+,{"description": "Δαλασί", "currency_icon": "D", "currency_identifier": "GMD"}
+,{"description": "Λάρι Γεωργίας", "currency_icon": "ლ", "currency_identifier": "GEL"}
+,{"description": "Σεντί Γκάνας", "currency_icon": "GH₵", "currency_identifier": "GHS"}
+,{"description": "Λίρα Γιβραλτάρ", "currency_icon": "£", "currency_identifier": "GIP"}
+,{"description": "Δραχμή", "currency_icon": "₯, Δρχ, Δρ", "currency_identifier": "GRD"}
+,{"description": "Kβετσάλ Γουατεμάλας", "currency_icon": "Q", "currency_identifier": "GTQ"}
+,{"description": "Φράγκο Γουϊνέας", "currency_icon": "FG", "currency_identifier": "GNF"}
+,{"description": "Δολλάριο Γουιάνας", "currency_icon": "$", "currency_identifier": "GYD"}
+,{"description": "Γκούρντε", "currency_icon": "G", "currency_identifier": "HTG"}
+,{"description": "Λεμπίρα Ονδούρας", "currency_icon": "L", "currency_identifier": "HNL"}
+,{"description": "Δολλάριο Χονκ Κόνγκ", "currency_icon": "$", "currency_identifier": "HKD"}
+,{"description": "Φιορίνι Ουγγαρίας", "currency_icon": "Ft", "currency_identifier": "HUF"}
+,{"description": "Κορώνα Ισλανδίας", "currency_icon": "kr", "currency_identifier": "ISK"}
+,{"description": "Ρούπι Ινδίας", "currency_icon": "₹", "currency_identifier": "INR"}
+,{"description": "Ρούπια", "currency_icon": "Rp", "currency_identifier": "IDR"}
+,{"description": "Ριάλ", "currency_icon": "﷼", "currency_identifier": "IRR"}
+,{"description": "Δινάριο Ιράκ", "currency_icon": "د.ع", "currency_identifier": "IQD"}
+,{"description": "Νέο σέκελ", "currency_icon": "₪", "currency_identifier": "ILS"}
+,{"description": "Λίρα Ιταλίας", "currency_icon": "L,£", "currency_identifier": "ITL"}
+,{"description": "Δολλάριο Τζαμάικας", "currency_icon": "J$", "currency_identifier": "JMD"}
+,{"description": "Γιέν Ιαπωνίας", "currency_icon": "¥", "currency_identifier": "JPY"}
+,{"description": "Δινάριο Ιορδανίας", "currency_icon": "ا.د", "currency_identifier": "JOD"}
+,{"description": "Τένγκε", "currency_icon": "лв", "currency_identifier": "KZT"}
+,{"description": "Σελλίνι Κένυας", "currency_icon": "KSh", "currency_identifier": "KES"}
+,{"description": "Δινάριο Κουβέιτ", "currency_icon": "ك.د", "currency_identifier": "KWD"}
+,{"description": "Σομ", "currency_icon": "лв", "currency_identifier": "KGS"}
+,{"description": "Κιπ Λάος", "currency_icon": "₭", "currency_identifier": "LAK"}
+,{"description": "Λατς", "currency_icon": "Ls", "currency_identifier": "LVL"}
+,{"description": "Λίρα Λιβάνου", "currency_icon": "£", "currency_identifier": "LBP"}
+,{"description": "Μαλότι", "currency_icon": "L", "currency_identifier": "LSL"}
+,{"description": "Δολλάριο Λιβερίας", "currency_icon": "$", "currency_identifier": "LRD"}
+,{"description": "Δινάριο Λιβύης", "currency_icon": "د.ل", "currency_identifier": "LYD"}
+,{"description": "Λίφας Λιθουανία", "currency_icon": "Lt", "currency_identifier": "LTL"}
+,{"description": "Πατακα", "currency_icon": "$", "currency_identifier": "MOP"}
+,{"description": "Δινάριο", "currency_icon": "ден", "currency_identifier": "MKD"}
+,{"description": "Αριάρη Μαδαγασκάρης", "currency_icon": "Ar", "currency_identifier": "MGA"}
+,{"description": "μαλάβι-Κβάτσα", "currency_icon": "MK", "currency_identifier": "MWK"}
+,{"description": "Ρίγκιντ Μαλαισίας", "currency_icon": "RM", "currency_identifier": "MYR"}
+,{"description": "Rufiya", "currency_icon": "Rf", "currency_identifier": "MVR"}
+,{"description": "Ουγκίγια", "currency_icon": "MRU", "currency_identifier": "MRO"}
+,{"description": "Ρούπι Μαυριτανίας", "currency_icon": "₨", "currency_identifier": "MUR"}
+,{"description": "Πέσος Μεξικού", "currency_icon": "$", "currency_identifier": "MXN"}
+,{"description": "Λεου", "currency_icon": "L", "currency_identifier": "MDL"}
+,{"description": "Τουγκρίκ Μογκολίας", "currency_icon": "₮", "currency_identifier": "MNT"}
+,{"description": "Ντίρχαμ Μαρόκο", "currency_icon": "MAD", "currency_identifier": "MAD"}
+,{"description": "Μετικάλ Μοζαμβίκης", "currency_icon": "MT", "currency_identifier": "MZM"}
+,{"description": "Κιάτ", "currency_icon": "K", "currency_identifier": "MMK"}
+,{"description": "Δολλάριο Ναμίμπιας", "currency_icon": "$", "currency_identifier": "NAD"}
+,{"description": "Ρούπι Νεπάλ", "currency_icon": "₨", "currency_identifier": "NPR"}
+,{"description": "Φιορίνια Ολλανδικών Αντίλων", "currency_icon": "ƒ", "currency_identifier": "ANG"}
+,{"description": "Νέο δολάριο Ταϊβάν", "currency_icon": "$", "currency_identifier": "TWD"}
+,{"description": "Δολλάριο Νέας Ζηλανδίας", "currency_icon": "$", "currency_identifier": "NZD"}
+,{"description": "Kόρντομπα", "currency_icon": "C$", "currency_identifier": "NIO"}
+,{"description": "Νάιρα Νιγηρίας", "currency_icon": "₦", "currency_identifier": "NGN"}
+,{"description": "Γουόν Β. Κορέας", "currency_icon": "₩", "currency_identifier": "KPW"}
+,{"description": "Κορώνα Νορβηγίας", "currency_icon": "kr", "currency_identifier": "NOK"}
+,{"description": "Ριάλ Ομάν", "currency_icon": ".ع.ر", "currency_identifier": "OMR"}
+,{"description": "Ρούπι Πακιστάν", "currency_icon": "₨", "currency_identifier": "PKR"}
+,{"description": "Μπάλμποα", "currency_icon": "B/.", "currency_identifier": "PAB"}
+,{"description": "Κινα", "currency_icon": "K", "currency_identifier": "PGK"}
+,{"description": "Γκουαρανί", "currency_icon": "₲", "currency_identifier": "PYG"}
+,{"description": "Νέο σολ Περού", "currency_icon": "S/.", "currency_identifier": "PEN"}
+,{"description": "Πέσος Φιλιππίνων", "currency_icon": "₱", "currency_identifier": "PHP"}
+,{"description": "Ζλότι Πολωνίας", "currency_icon": "zł", "currency_identifier": "PLN"}
+,{"description": "Riyal", "currency_icon": "ق.ر", "currency_identifier": "QAR"}
+,{"description": "Λεου", "currency_icon": "lei", "currency_identifier": "RON"}
+,{"description": "Ρούβλια", "currency_icon": "₽", "currency_identifier": "RUB"}
+,{"description": "Φράγκο Ρουάντα", "currency_icon": "FRw", "currency_identifier": "RWF"}
+,{"description": "Κόλον Σαλβαντόρ", "currency_icon": "₡", "currency_identifier": "SVC"}
+,{"description": "Τάλα", "currency_icon": "SAT", "currency_identifier": "WST"}
+,{"description": "Ριάλ Σαουδ. Αραβίας", "currency_icon": "﷼", "currency_identifier": "SAR"}
+,{"description": "Δηνάριο", "currency_icon": "din", "currency_identifier": "RSD"}
+,{"description": "Ρούπι Σευχέλλων", "currency_icon": "SRe", "currency_identifier": "SCR"}
+,{"description": "Λεόνε", "currency_icon": "Le", "currency_identifier": "SLL"}
+,{"description": "δολάριο Σιγκαπούρης", "currency_icon": "$", "currency_identifier": "SGD"}
+,{"description": "Κορώνα Σλοβακίας", "currency_icon": "Sk", "currency_identifier": "SKK"}
+,{"description": "Δολλάριο Σαλομόνων", "currency_icon": "Si$", "currency_identifier": "SBD"}
+,{"description": "Σελλίνι Σομαλίας", "currency_icon": "Sh.so.", "currency_identifier": "SOS"}
+,{"description": "Ράντι Νότια Αφρική", "currency_icon": "R", "currency_identifier": "ZAR"}
+,{"description": "Γουόν Κορέας", "currency_icon": "₩", "currency_identifier": "KRW"}
+,{"description": "Special Drawing Rights", "currency_icon": "SDR", "currency_identifier": "XDR"}
+,{"description": "Ρούπι Σρί Λάνκα", "currency_icon": "Rs", "currency_identifier": "LKR"}
+,{"description": "λίρα Αγίας Ελένης", "currency_icon": "£", "currency_identifier": "SHP"}
+,{"description": "Λίρα Σουδάν", "currency_icon": ".س.ج", "currency_identifier": "SDG"}
+,{"description": "Δολάριο Σουρινάμ", "currency_icon": "$", "currency_identifier": "SRD"}
+,{"description": "Λιλαντζενί", "currency_icon": "E", "currency_identifier": "SZL"}
+,{"description": "Κορώνα Σουηδίας", "currency_icon": "kr", "currency_identifier": "SEK"}
+,{"description": "Fράγκο Ελβετίας", "currency_icon": "CHf", "currency_identifier": "CHF"}
+,{"description": "Λίρα Συρίας", "currency_icon": "LS", "currency_identifier": "SYP"}
+,{"description": "Dobra", "currency_icon": "Db", "currency_identifier": "STD"}
+,{"description": "Somoni", "currency_icon": "SM", "currency_identifier": "TJS"}
+,{"description": "Σελλίνι Τανζανίας", "currency_icon": "TSh", "currency_identifier": "TZS"}
+,{"description": "Μπάχτ", "currency_icon": "฿", "currency_identifier": "THB"}
+,{"description": "Παάνγκα", "currency_icon": "$", "currency_identifier": "TOP"}
+,{"description": "Δολλάριο Τρινιντάτ και Τομπάγκο", "currency_icon": "$", "currency_identifier": "TTD"}
+,{"description": "Δινάριο Τυνησίας", "currency_icon": "ت.د", "currency_identifier": "TND"}
+,{"description": "Λίρα Τουρκίας", "currency_icon": "₺", "currency_identifier": "TRY"}
+,{"description": "Μανάτ Τουρκμενιστάν", "currency_icon": "m", "currency_identifier": "TMT"}
+,{"description": "Σελλίνι Ουγκάντας", "currency_icon": "USh", "currency_identifier": "UGX"}
+,{"description": "Χρυβνια Ουκρανίας", "currency_icon": "₴", "currency_identifier": "UAH"}
+,{"description": "Αραβικά Εμιράτα Ντιρχαμ", "currency_icon": "إ.د", "currency_identifier": "AED"}
+,{"description": "Πέσος Ουρουγουάης", "currency_icon": "$", "currency_identifier": "UYU"}
+,{"description": "Δολλάριο Αμερικής", "currency_icon": "$", "currency_identifier": "USD"}
+,{"description": "Σαμ Ουζμπεκιστάν", "currency_icon": "лв", "currency_identifier": "UZS"}
+,{"description": "Vatu", "currency_icon": "VT", "currency_identifier": "VUV"}
+,{"description": "Βολιβάρ Βενεζουέλας", "currency_icon": "Bs", "currency_identifier": "VEF"}
+,{"description": "Ντονγκ", "currency_icon": "₫", "currency_identifier": "VND"}
+,{"description": "Ριάλ", "currency_icon": "﷼", "currency_identifier": "YER"}
+,{"description": "Κβάτσα", "currency_icon": "ZK", "currency_identifier": "ZMK"}
+,{"description": "Δολλάριο Ζιμπάμπουε", "currency_icon": "$", "currency_identifier": "ZWL"}
+,{"description": "Λίρα νοτίου Σουδάν", "currency_icon": "£", "currency_identifier": "SSP"}
+]
