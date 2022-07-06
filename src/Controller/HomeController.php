@@ -39,7 +39,7 @@ class HomeController extends AbstractController
         return new Response(null, 200);
     }
 
-    #[Route('/api/currencies',methods: 'GET')]
+    #[Route('/api/currencies', methods: 'GET')]
     public function getCurrencies(EntityManagerInterface $em): Response
     {
         $currencies = $em->getRepository(Currency::class)->findAll();
@@ -49,12 +49,14 @@ class HomeController extends AbstractController
             $data[] = [
                 'id' => $currency->getId(),
                 'description' => $currency->getDescription(),
+                'icon' => $currency->getCurrencyIcon(),
+                'identifier' => $currency->getCurrencyIdentifier()
             ];
         }
         return $this->json($data);
     }
 
-    #[Route('/api/currencies/getRates/{currencyFrom}/{currencyTo}',methods: 'GET')]
+    #[Route('/api/currencies/getRates/{currencyFrom}/{currencyTo}', methods: 'GET')]
     public function getRates(ManagerRegistry $doctrine, Request $request): Response
     {
         $repository = $doctrine->getRepository(CurrencyRate::class);
@@ -75,5 +77,21 @@ class HomeController extends AbstractController
         $entityManager->flush();
 
         return new Response(null, 200);
+    }
+
+    #[Route('/api/currencies/', name: 'save', methods: 'POST')]
+    public function save(ManagerRegistry $doctrine, Request $request): Response
+    {
+        $data = json_decode($request->getContent(), true);
+        $entityManager = $doctrine->getManager();
+
+        $currency = new Currency();
+        $currency->setCurrencyIdentifier($data['currencyIdentifier']);
+        $currency->setDescription($data['description']);
+        $currency->setCurrencyIcon($data['icon']);
+
+        $entityManager->persist($currency);
+        $entityManager->flush();
+        return new Response(null, 201);
     }
 }
