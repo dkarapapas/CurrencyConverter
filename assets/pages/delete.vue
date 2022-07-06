@@ -2,13 +2,13 @@
   <v-data-table
       :headers="headers"
       :items="currencies"
+      sort-by="description"
       class="elevation-1"
   >
     <template v-slot:top>
       <v-toolbar
           flat
       >
-        <v-toolbar-title>Currencies</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-dialog
             v-model="dialog"
@@ -39,18 +39,19 @@
                       md="4"
                   >
                     <v-text-field
-                        v-model="editedItem.identifier"
-                        label="Identifier"
+                        v-model="editedItem.description"
+                        label="Description"
                     ></v-text-field>
                   </v-col>
+
                   <v-col
                       cols="12"
                       sm="6"
                       md="4"
                   >
                     <v-text-field
-                        v-model="editedItem.description"
-                        label="Description"
+                        v-model="editedItem.identifier"
+                        label="Code"
                     ></v-text-field>
                   </v-col>
                   <v-col
@@ -60,7 +61,7 @@
                   >
                     <v-text-field
                         v-model="editedItem.icon"
-                        label="Icon"
+                        label="Symbol"
                     ></v-text-field>
                   </v-col>
                 </v-row>
@@ -129,10 +130,22 @@ export default {
     dialogDelete: false,
     headers: [
       {
-        text: 'Currency',
+        text: 'Description',
         align: 'start',
         sortable: false,
         value: 'description'
+      },
+      {
+        text: 'Code',
+        align: 'start',
+        sortable: false,
+        value: 'identifier'
+      },
+      {
+        text: 'Symbol',
+        align: 'start',
+        sortable: false,
+        value: 'icon'
       },
       {
         text: 'Actions',
@@ -167,7 +180,7 @@ export default {
   },
   computed: {
     formTitle() {
-      return this.editedIndex === -1 ? 'New Item' : 'Edit Item'
+      return this.editedIndex === -1 ? 'New Currency' : 'Edit Currency'
     },
   },
   created() {
@@ -208,13 +221,20 @@ export default {
     },
     async save() {
       if (this.editedIndex > -1) {
+        await axios.put("https://127.0.0.1:8000/api/currencies/",{
+          id: this.editedItem.id,
+          currencyIdentifier: this.editedItem.identifier,
+          description: this.editedItem.description,
+          icon: this.editedItem.icon
+        })
         Object.assign(this.currencies[this.editedIndex], this.editedItem)
       } else {
         await axios.post("https://127.0.0.1:8000/api/currencies/",{
           currencyIdentifier: this.editedItem.identifier,
           description: this.editedItem.description,
           icon: this.editedItem.icon
-        })
+        }).then(response=>this.editedItem.id = response.data)
+        this.currencies.push(this.editedItem);
       }
       this.close()
     },

@@ -92,6 +92,21 @@ class HomeController extends AbstractController
 
         $entityManager->persist($currency);
         $entityManager->flush();
-        return new Response(null, 201);
+        return new Response($currency->getId(), 201);
+    }
+
+    #[Route('/api/currencies/', name: 'update', methods: 'PUT')]
+    public function update(ManagerRegistry $doctrine, Request $request): Response
+    {
+        $data = json_decode($request->getContent(), true);
+        $entityManager = $doctrine->getManager();
+
+        $currency = $entityManager->getRepository(Currency::class)->find(['id' => $data['id']]);
+        $currency->setCurrencyIdentifier($data['currencyIdentifier']);
+        $currency->setDescription($data['description']);
+        $currency->setCurrencyIcon($data['icon']);
+
+        $entityManager->flush();
+        return new Response(null, 200);
     }
 }

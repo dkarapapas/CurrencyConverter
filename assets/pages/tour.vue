@@ -13,9 +13,9 @@
         <v-btn
             to="/delete"
             depressed
-            color="red"
+            color="yellow"
         >
-          Delete
+          Currencies
         </v-btn>
 
         <v-btn
