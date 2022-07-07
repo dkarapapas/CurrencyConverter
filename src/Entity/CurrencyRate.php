@@ -2,20 +2,26 @@
 
 namespace App\Entity;
 
+use Symfony\Component\Validator\Constraints as Assert;
 use App\Repository\CurrencyRateRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: CurrencyRateRepository::class)]
 class CurrencyRate
 {
+    #[Assert\Length(max:10)]
     #[ORM\Column(type: 'decimal', precision: 10, scale: 4)]
     private string $rate;
 
+    #[Assert\NotBlank]
+    #[Assert\NotNull]
     #[ORM\Id]
     #[ORM\ManyToOne(targetEntity: Currency::class, inversedBy: 'currencyRatesTo')]
     #[ORM\JoinColumn(nullable: false)]
     private Currency $currencyFrom;
 
+    #[Assert\NotBlank]
+    #[Assert\NotNull]
     #[ORM\Id]
     #[ORM\ManyToOne(targetEntity: Currency::class, inversedBy: 'currencyRatesFrom')]
     #[ORM\JoinColumn(nullable: false)]

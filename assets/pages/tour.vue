@@ -19,6 +19,14 @@
         </v-btn>
 
         <v-btn
+            to="/currencyRateCRUD"
+            depressed
+            color="orange"
+        >
+          Currencies Rates
+        </v-btn>
+
+        <v-btn
             to="/register"
             depressed
             color="green"

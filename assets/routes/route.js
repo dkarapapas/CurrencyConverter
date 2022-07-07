@@ -4,9 +4,10 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter)
 
 import currencies from "../pages/currencies";
-import dlt from "../pages/currencyCRUD";
+import currencyCRUD from "../pages/currencyCRUD";
 import register from "../pages/register";
 import login from "../pages/login";
+import currencyRateCRUD from "../pages/currencyRateCRUD";
 
 const routes = [
     {
@@ -15,7 +16,7 @@ const routes = [
         path:"/"
     },
     {
-        component: dlt,
+        component: currencyCRUD,
         name: "currencyCRUD",
         path:"/currencyCRUD"
     },
@@ -28,6 +29,11 @@ const routes = [
         component: login,
         name: "login",
         path:"/login"
+    },
+    {
+        component: currencyRateCRUD,
+        name: "currencyRateCRUD",
+        path:"/currencyRateCRUD"
     },
 ];
 
