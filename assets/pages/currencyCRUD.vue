@@ -31,41 +31,51 @@
             </v-card-title>
 
             <v-card-text>
-              <v-container>
-                <v-row>
-                  <v-col
-                      cols="12"
-                      sm="6"
-                      md="4"
-                  >
-                    <v-text-field
-                        v-model="editedItem.description"
-                        label="Description"
-                    ></v-text-field>
-                  </v-col>
+              <v-form class="px-3" ref="form">
+                <v-container>
+                  <v-row>
+                    <v-col
+                        cols="12"
+                        sm="6"
+                        md="4"
+                    >
+                      <v-text-field
+                          v-model="editedItem.description"
+                          :rules="[rulesDescription.counter]"
+                          counter
+                          maxlength="30"
+                          label="Description"
+                      ></v-text-field>
+                    </v-col>
 
-                  <v-col
-                      cols="12"
-                      sm="6"
-                      md="4"
-                  >
-                    <v-text-field
-                        v-model="editedItem.identifier"
-                        label="Code"
-                    ></v-text-field>
-                  </v-col>
-                  <v-col
-                      cols="12"
-                      sm="6"
-                      md="4"
-                  >
-                    <v-text-field
-                        v-model="editedItem.icon"
-                        label="Symbol"
-                    ></v-text-field>
-                  </v-col>
-                </v-row>
-              </v-container>
+                    <v-col
+                        cols="12"
+                        sm="6"
+                        md="4"
+                    >
+                      <v-text-field
+                          v-model="editedItem.identifier"
+                          :rules="[rulesIdentifier.required, rulesIdentifier.counter]"
+                          maxlength="3"
+                          label="Code"
+                      ></v-text-field>
+                    </v-col>
+                    <v-col
+                        cols="12"
+                        sm="6"
+                        md="4"
+                    >
+                      <v-text-field
+                          v-model="editedItem.icon"
+                          :rules="[rulesIcon.counter]"
+                          counter
+                          maxlength="10"
+                          label="Symbol"
+                      ></v-text-field>
+                    </v-col>
+                  </v-row>
+                </v-container>
+              </v-form>
             </v-card-text>
 
             <v-card-actions>
@@ -128,6 +138,16 @@ export default {
   data: () => ({
     dialog: false,
     dialogDelete: false,
+    rulesDescription: {
+      counter: value => value.length <= 30 || 'Max 30 characters',
+    },
+    rulesIdentifier: {
+      required: (value) => !!value || 'Required.',
+      counter: value => value.length <= 3 || 'Max 3 characters'
+    },
+    rulesIcon: {
+      counter: value => value.length <= 10 || 'Max 10 characters',
+    },
     headers: [
       {
         text: 'Description',
@@ -169,7 +189,6 @@ export default {
       icon: ''
     },
   }),
-
   watch: {
     dialog(val) {
       val || this.close()
@@ -220,23 +239,25 @@ export default {
       this.dialog = true
     },
     async save() {
-      if (this.editedIndex > -1) {
-        await axios.put("https://127.0.0.1:8000/api/currencies/",{
-          id: this.editedItem.id,
-          currencyIdentifier: this.editedItem.identifier,
-          description: this.editedItem.description,
-          icon: this.editedItem.icon
-        })
-        Object.assign(this.currencies[this.editedIndex], this.editedItem)
-      } else {
-        await axios.post("https://127.0.0.1:8000/api/currencies/",{
-          currencyIdentifier: this.editedItem.identifier,
-          description: this.editedItem.description,
-          icon: this.editedItem.icon
-        }).then(response=>this.editedItem.id = response.data)
-        this.currencies.push(this.editedItem);
+      if (this.$refs.form.validate()) {
+        if (this.editedIndex > -1) {
+          await axios.put("https://127.0.0.1:8000/api/currencies/", {
+            id: this.editedItem.id,
+            currencyIdentifier: this.editedItem.identifier,
+            description: this.editedItem.description,
+            icon: this.editedItem.icon
+          })
+          Object.assign(this.currencies[this.editedIndex], this.editedItem)
+        } else {
+          await axios.post("https://127.0.0.1:8000/api/currencies/", {
+            currencyIdentifier: this.editedItem.identifier,
+            description: this.editedItem.description,
+            icon: this.editedItem.icon
+          }).then(response => this.editedItem.id = response.data)
+          this.currencies.push(this.editedItem);
+        }
+        this.close()
       }
-      this.close()
     },
   },
 }

@@ -84,9 +84,7 @@ export default {
   },
   methods: {
     async fetchCurrencies() {
-      let response = await axios.get(
-          "https://127.0.0.1:8000/api/currencies"
-      );
+      let response = await axios.get("https://127.0.0.1:8000/api/currencies");
       this.currencies = response.data;
     },
     onChangeFrom(event) {
@@ -100,8 +98,7 @@ export default {
         this.rate = amount;
       } else {
         let rate = await axios.get(
-            "https://127.0.0.1:8000/api/currencies/getRates/",
-            {params: {currencyFrom: currencyFrom, currencyTo: currencyTo}}
+            "https://127.0.0.1:8000/api/currencies/getRates/" + currencyFrom + "/" + currencyTo
         );
         convertedRate = amount * rate.data;
         this.rate = convertedRate;

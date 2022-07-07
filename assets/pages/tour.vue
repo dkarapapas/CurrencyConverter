@@ -11,7 +11,7 @@
         </v-btn>
 
         <v-btn
-            to="/delete"
+            to="/currencyCRUD"
             depressed
             color="yellow"
         >

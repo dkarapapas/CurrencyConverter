@@ -11,6 +11,7 @@ use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 class HomeController extends AbstractController
 {
@@ -68,7 +69,7 @@ class HomeController extends AbstractController
         return new Response($currencyRate->getRate(), 200);
     }
 
-    #[Route('/api/currencies/{id}')]
+    #[Route('/api/currencies/{id}', methods: 'DELETE')]
     public function delete(ManagerRegistry $doctrine, Request $request): Response
     {
         $entityManager = $doctrine->getManager();
@@ -80,7 +81,7 @@ class HomeController extends AbstractController
     }
 
     #[Route('/api/currencies/', name: 'save', methods: 'POST')]
-    public function save(ManagerRegistry $doctrine, Request $request): Response
+    public function save(ManagerRegistry $doctrine, Request $request, ValidatorInterface $validator): Response
     {
         $data = json_decode($request->getContent(), true);
         $entityManager = $doctrine->getManager();
@@ -89,6 +90,13 @@ class HomeController extends AbstractController
         $currency->setCurrencyIdentifier($data['currencyIdentifier']);
         $currency->setDescription($data['description']);
         $currency->setCurrencyIcon($data['icon']);
+
+        $errors = $validator->validate($currency);
+        if (count($errors) > 0) {
+            $errorsString = (string)$errors;
+
+            return new Response($errorsString);
+        }
 
         $entityManager->persist($currency);
         $entityManager->flush();

@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Symfony\Component\Validator\Constraints as Assert;
 use App\Repository\CurrencyRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -16,11 +17,16 @@ class Currency
     private int $id;
 
     #[ORM\Column(type: 'string', length: 3, unique: true)]
+    #[Assert\NotBlank]
+    #[Assert\NotNull]
+    #[Assert\Length(max:3)]
     private string $currency_identifier;
 
+    #[Assert\Length(max:30)]
     #[ORM\Column(type: 'string', length: 30, nullable: true)]
     private ?string $description = null;
 
+    #[Assert\Length(max:10)]
     #[ORM\Column(type: 'string', length: 10, nullable: true)]
     private ?string $currency_icon = null;
 

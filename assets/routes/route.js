@@ -4,7 +4,7 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter)
 
 import currencies from "../pages/currencies";
-import dlt from "../pages/delete";
+import dlt from "../pages/currencyCRUD";
 import register from "../pages/register";
 import login from "../pages/login";
 
@@ -16,8 +16,8 @@ const routes = [
     },
     {
         component: dlt,
-        name: "delete",
-        path:"/delete"
+        name: "currencyCRUD",
+        path:"/currencyCRUD"
     },
     {
         component: register,
